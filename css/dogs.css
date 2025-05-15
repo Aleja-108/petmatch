@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background: white;
+  color: #333;
+}
+
+.hero-dogs {
+  background-image: url('../imgs/header-bg.jpg'); /* o la imagen que quieras */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px; /* más bajo que el home */
+}
+
+.hero-dogs .overlay {
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orange;
+  text-align: center;
+}
+
+/* Estilos similares al home */
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  height: 150px;
+  margin-top: 1.5rem;
+}
+
+.nav-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-center ul li a {
+  color: orange;
+  text-decoration: none;
+}
+
+.home-icon {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.home-icon a {
+  color: #ff5722;
+  text-decoration: none;
+}
+.signin {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+}
+
+.signin a {
+  color: orange;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-form input {
+  padding: 0.5rem;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 0.5rem;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 4rem; /* evita que las cards se peguen al header o lo tapen */
+}
+/*.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}*/
+/*.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  /*justify-items: center;
+}*/
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  gap: 1rem; /* espacio entre las cards */
+  max-width: 1200px; /* opcional: ancho máximo del contenedor */
+  margin: 2rem auto; /* centra horizontalmente */
+  padding: 0 1rem; /* espaciado lateral para móviles */
+}
+
+.card {
+  background: #fffaf5;
+  border: 2px dashed #ff7043;
+  border-radius: 10px;
+  padding: 1rem;
+  /*max-width: 220px;*/
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: #ff7043;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
